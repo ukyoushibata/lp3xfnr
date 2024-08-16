@@ -687,26 +687,45 @@ a:hover {
 .point__title-select{
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: -0.5rem;
 }
 .point__title-select:before{
-    content: url('');
-    margin-right: 1.2rem;
+    content: '';
+    margin-right:0.2rem;
+    display: inline-block;
+    background-image: url(/assets/image/kirameki_beauty_labo.png);
+    width: 20rem;
+    height: 2rem;
+    background-size: contain;
+    vertical-align: middle;
 }
 
 .point__title-three{
     font-size: 3.2rem;
     color:#FA7DA3;
     text-align: center;
-    margin-bottom: 2.35rem;
+    margin-bottom: 1.9rem;
+    letter-spacing: 0.04em;
 }
 .point__title-three:before{
-    content: url('');
-    margin-right:1.2rem;
+    content: '';
+    margin-right:0.2rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_left.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
 .point__title-three:after{
-    content: url('');
-    margin-left:1.2rem;
+    content: '';
+    margin-left:0.1rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_right.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
 
 
@@ -734,13 +753,26 @@ a:hover {
     font-size: 1.8rem;
     text-align: center;
     background-color: #FA7DA3;
-    padding: 1.1rem 0 1.1rem;
+    padding: 0.9rem 0;
 }
 
 .point__item-content{
-    padding: 1.5rem 1.5rem 2rem;
-    font-size: 1.4rem;
+    padding: 1.5rem 1.5rem 1.6rem;
     background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.point__item01-content-txt{
+    font-size: 1.4rem;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+.point__item01-content-img-txt{
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .point__item-content-img{
@@ -748,17 +780,35 @@ a:hover {
     justify-content: space-between;
 }
 
+.point__item-content-img img{
+    width: 14.3rem;
+    height: 8.5rem;
+    margin-bottom: 0.2rem;
+}
+
 .point__item02-txt{
     font-size: 2.3rem;
     text-align: center;
-    margin-bottom: 2.6rem;
+    margin-bottom: 1.8rem;
 }
+
+
 
 .point__item02-content{
     display: grid;
     grid-template-columns: 10rem 10rem 10rem;
     grid-template-rows: 13rem 13rem;
-    grid-gap: 1.84rem 1.2rem;
+    grid-gap: 1.3rem 1.2rem;
+}
+
+.point__item02-content-txt{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+}
+
+.point__item02-content-div{
+    margin-bottom: 3.8rem;
 }
 
 .point__item02-content div img{
@@ -794,22 +844,34 @@ a:hover {
 .course__title-others{
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0rem;
 }
 
 .course__title-two{
     font-size: 3.2rem;
     color:#FA7DA3;
     text-align: center;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2rem;
 }
 .course__title-two:before{
-    content: url('');
-    margin-right:1.2rem;
+    content: '';
+    margin-right:0.2rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_left.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
 .course__title-two:after{
-    content: url('');
-    margin-left:1.2rem;
+    content: '';
+    margin-left:0.1rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_right.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
 
 @media screen and (min-width:768px) {
@@ -852,7 +914,7 @@ a:hover {
 
 /* お客様の声 */
 .voice{
-    background-color: #FDF0F5;
+    background-color: #fdf0f5;
     padding: 3rem 0 5rem;
 }
 
@@ -864,18 +926,31 @@ a:hover {
 }
 
 .voice__container-title:before{
-    content: url('');
-    margin-right:1.2rem;
+    content: '';
+    margin-right:0.2rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_left.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
 .voice__container-title:after{
-    content: url('');
-    margin-left:1.2rem;
+    content: '';
+    margin-left:0.1rem;
+    display: inline-block;
+    background-image: url(/assets/image/shine_right.png);
+    width: 3.5rem;
+    height: 4.2rem;
+    background-size: contain;
+    vertical-align: -1rem;
 }
+
 
 .slider__border{
     padding: 0 0.75rem;
     width: 31rem;
-    height: 18.8rem;
+    height: 20rem;
 }
 .slider__content{
     border: 0.1rem solid #FA7DA3;
@@ -906,20 +981,37 @@ a:hover {
 
 .slider__lower-txt-comment{
     font-size: 1.4rem;
+    line-height: 1.5;
 } 
 
 .slick-prev{
-    left: 5rem !important; 
+    left: 2rem ; 
     z-index: 100;
 }
 .slick-prev::before{
-    color: #FA7DA3 !important;
+    font-size: 3rem;
+    color: #FA7DA3 ;
 }
 
 .slick-next {
-    right: 5rem !important;
+    right: 3rem ;
     z-index: 100;
 }
 .slick-next::before{
-    color: #FA7DA3 !important;
+    font-size: 3rem;
+    color: #FA7DA3 ;
+}
+.slick-dots li button:before{
+	font-size:2rem;
+    color: #ffd2d2;
+}
+
+.slick-dots li.slick-active button:before{
+	font-size:2rem;
+    color: #FA7DA3;
+}
+
+footer{
+    padding: 1.4rem 15.9rem 1.1rem;
+    background-color: #FA7DA3;
 }
