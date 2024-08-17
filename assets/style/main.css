@@ -53,7 +53,7 @@ a:hover {
     opacity: .6;
 }
 
-/* フォント */
+/*------------------- フォント ------------------*/
 .outfit{
     font-family: "Outfit", serif;
     font-weight: 400;
@@ -71,7 +71,7 @@ a:hover {
     font-weight: 700;
 }
 
-/* header */
+/*------------------- header ------------------*/
 .header {
     position: fixed;
     top: 0;
@@ -133,10 +133,11 @@ a:hover {
 
 .header__container-button div a{
     border-radius: 1.6rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #fff;
     padding: 0.7rem;
-    padding-right: 3.3rem;
+    padding-right: 2.5rem;
+    padding-left:1.3rem;
     position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -150,11 +151,8 @@ a:hover {
     }
     
 }
-.header__container-button div:nth-of-type(2) a{
-    padding-right: 3.9rem;
-}
 @media screen and (min-width: 768px) {
-    .header__container-button div:nth-of-type(2) a {
+    .header__container-button-reserve{
         padding-right: 6.8rem;
         padding-left: 2.7rem;
     }
@@ -188,6 +186,9 @@ a:hover {
 .header__container-button-reserve{
     background-color: #49C43D ;
 }
+.header__container-button-reserve span{
+    font-size: 1rem;
+}
 @media screen and (min-width: 768px) {
     .header__container-button-reserve span{
     font-size: 1.77rem;
@@ -195,10 +196,15 @@ a:hover {
     }
     
 }
-/* cover visual */
+
+
+/*-------------------  メインビジュアル --------------------*/
 .cover{
     background-color: #FA7DA3;
-    height: 32rem;
+    height: 31.3rem;
+    background-image: url(/assets/image/main_visual.png);
+    background-size: 52%;
+    background-position: 0.7rem 9.8rem;
 }
 @media screen and (min-width: 768px) {
     .cover {
@@ -207,14 +213,9 @@ a:hover {
     }
     
 }
-.cover__block{
-    background-image: url(/assets/image/main_visual.png);
-    height: 100%;
-    background-size: 165%;
-    background-position: -9rem bottom;
-}
+
 @media screen and (min-width: 768px) {
-    .cover__block {
+    .cover{
         margin-inline: auto;
         max-width: 96rem;
         background-size: 148%;
@@ -223,56 +224,26 @@ a:hover {
     
 }
 
-.cover__block-heading h1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.6rem;
+.cover__container{
+    position: relative;
+}
+
+.cover__heading-left{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
 }
 @media screen and (min-width: 768px) {
-    .cover__block-heading h1 {
-        height: 22.2rem;
-        margin-bottom: 0.4rem;
-    }
-    
-}
-.cover__block-heading--left{
-    width: 50%;
-}
-@media screen and (min-width: 768px) {
-    .cover__block-heading--left {
+    .cover__heading-left {
         width: 50rem;
     }
     
 }
-.cover__block-heading--left p:nth-of-type(1){
-    font-size: 4.2rem;
-    color: #fff;
-    line-height: 1.33;
-    text-align: center;
-}
-@media screen and (min-width: 768px) {
-    .cover__block-heading--left p:nth-of-type(1) {
-        font-size: 12rem;
-        /* line-height: 0.4; */
-        /* height: 10.5rem; */
-    }
-    
-}
-.cover__block-heading--left p:nth-of-type(2){
-    font-size: 1.8rem;
-    color: #fff;
-    line-height: 1.3;
-    text-align: center;
-}
-@media screen and (min-width: 768px) {
-    .cover__block-heading--left p:nth-of-type(2) {
-        font-size: 3.5rem;
-        text-align: right;
-    }
-    
-}
-.cover__block-heading--right{
+
+.cover__heading-right{
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -283,7 +254,7 @@ a:hover {
     box-shadow: 4px 4px 0px #E77497;
 }
 @media screen and (min-width: 768px) {
-    .cover__block-heading--right {
+    .cover__heading-right {
         width: 42rem;
         height: 100%;
         padding: 4rem 5.3rem 3.3rem 5.8rem;
@@ -291,7 +262,7 @@ a:hover {
     
 }
 
-.white p:nth-of-type(1){
+.cover__heading-right-now{
     font-size: 1.3rem;
     background-color: #fff;
     color: #FA7DA3;
@@ -300,50 +271,51 @@ a:hover {
     text-align: center;
 }
 @media screen and (min-width: 768px) {
-    .white p:nth-of-type(1) {
+    .cover__heading-right-now{
         font-size: 3rem;
         width: 10rem;
     }
     
 }
-.white p:nth-of-type(2){
+.cover__heading-right-month{
     font-size: 2.4rem;
     color: #fff;
 }
 @media screen and (min-width: 768px) {
-    .white p:nth-of-type(2) {
+    .cover__heading-right-month{
         font-size: 5.4rem;
     }
     
 }
 
-.yellow p{
+.cover__heading-right-yen{
     font-size: 7.6rem;
     line-height: 7rem;
     color: #FFFD7A;
 }
 @media screen and (min-width: 768px) {
-    .yellow p {
+    .cover__heading-right-yen{
         font-size: 18rem;
     }
     
 }
-.yellow p span{
+.cover__heading-right-yen span{
     font-size: 3.6rem;
 }
 @media screen and (min-width: 768px) {
-    .yellow p span {
+    .cover__heading-right-yen span {
         font-size: 8rem;
     }
     
 }
 
-.cover__block-cost{
-    width: 50%;
-    margin: 0 0 0 auto;
+.cover__container-cost{
+    position: absolute;
+    top: 11rem;
+    right: 2.5rem;
 }
 
-.cover__block-cost p{
+.cover__container-cost p{
     font-size: 1.4rem;
     text-align: right;
     margin-bottom: 2.3rem;
@@ -352,7 +324,7 @@ a:hover {
     margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
-    .cover__block-cost p {
+    .cover__container-cost p {
         font-size: 2.6rem;
         width: 42.3rem;
         transform: translate(-2.2rem,0);
@@ -362,31 +334,29 @@ a:hover {
     
 }
 
-.cover__block-cost p span{
+.cover__container-cost p span{
     font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
-    .cover__block-cost p span {
+    .cover__container-cost p span {
         font-size: 1.7rem;
     }
     
 }
 
-.cover__block-txt{
-    width: 100%;
+.cover__container-txt{
+    position: absolute;
+    top: 15.5rem;
+    right: 2.5rem;
 }
 
-.cover__block-txt{
-    width: 48%;
-    margin: 0 0 0 auto;
-}
 @media screen and (min-width: 768px) {
-    .cover__block-txt {
+    .cover__container-txt {
         width: 43.5%;
     }
     
 }
-.cover__block-txt p{
+.cover__container-txt p{
     color: #fff;
     font-size: 1.8rem;
     text-align: center;
@@ -397,7 +367,7 @@ a:hover {
 
 }
 @media screen and (min-width: 768px) {
-    .cover__block-txt p {
+    .cover__container-txt p {
         font-size: 2.8rem;
         width: 42.3rem;
         margin-bottom: 2rem;
@@ -406,7 +376,7 @@ a:hover {
     
 }
 
-/* プレゼント部分 */
+/* -----------------３回プレゼント！ -------------------*/
 .present{
     background-color: #FFFEDD ;
     padding: 1.4rem 1.9rem;
@@ -418,14 +388,14 @@ a:hover {
     
 }
 @media screen and (min-width: 768px) {
-    .present__block {
+    .present__container {
         max-width: 55rem;
         margin-inline: auto;
     }
     
 }
 
-.present__block-txt01{
+.present__container-txt-now{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,50 +404,50 @@ a:hover {
     color: #FA7DA3;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt01 {
+    .present__container-txt-now {
         font-size: 3.4rem;
         margin-bottom: 1rem;
     }
     
 }
 
-.present__block-txt01::before,.present__block-txt01::after {
+.present__container-txt-now::before,.present__container-txt-now::after {
     width: 0.15rem;
     height: 2.5rem;
     content: "";
     background-color: #FA7DA3;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt01::before,.present__block-txt01::after {
+    .present__container-txt-now::before,.present__container-txt-now::after {
         height: 4.5rem;
         width: 0.25rem;
     }
     
 }
 
-.present__block-txt01::before {
+.present__container-txt-now::before {
     margin-right: 1.2rem;
     transform: rotate(-30deg);
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt01::before {
+    .present__container-txt-now::before {
         margin-right: 1.8rem;
     }
     
 }
 
-.present__block-txt01::after {
+.present__container-txt-now::after {
     margin-left: 1.5rem;
     transform: rotate(30deg);
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt01::after {
+    .present__container-txt-now::after {
         margin-left: 2rem;
     }
     
 }
 
-.present__block-txt02{
+.present__container-txt-course{
     font-size: 2.1rem;
     text-align: center;
     margin-bottom: 0;
@@ -487,13 +457,13 @@ a:hover {
     line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt02 {
+    .present__container-txt-course{
         font-size: 3.2rem;
     }
     
 }
 
-.present__block-txt03{
+.present__container-txt-three{
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -508,7 +478,7 @@ a:hover {
     border: 0.1rem solid #FA7DA3;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt03 {
+    .present__container-txt-three{
         height: 10rem;
         font-size: 6.8rem;
         line-height: 8rem;
@@ -517,28 +487,28 @@ a:hover {
     
 }
 
-.present__block-txt03 span{
+.present__container-txt-three span{
     font-size: 2.7rem;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt03 span {
+    .present__container-txt-three span {
         font-size: 4.4rem;
     }
     
 }
 
-.present__block-txt04{
+.present__container-txt-content{
     font-size: 1rem;
     text-align: center;
 }
 @media screen and (min-width: 768px) {
-    .present__block-txt04 {
+    .present__container-txt-content {
         font-size: 1.4rem;
     }
     
 }
 
-/* 無料体験実施中 */
+/* ----------------------無料体験実施中------------------ */
 .free{
     padding: 0.8rem 2rem 3rem;
 }
@@ -550,22 +520,23 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .free__block{
+    .free__container{
         max-width: 57.58rem;
         margin-inline: auto;
     }
     
 }
-.free__block-heading{
+.free__container-heading{
     font-size: 2.1rem;
-    letter-spacing: 0.21rem;
+    letter-spacing: 0.1em;
+    transform: translate(0.5rem, 0);
     color: #FA7DA3;
     text-align: center;
     margin-bottom: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
-    .free__block-heading{
+    .free__container-heading{
         font-size: 3.4rem;
         margin-bottom: 1.4rem;
     }
@@ -573,7 +544,7 @@ a:hover {
 }
 
 
-.free__block-button{
+.free__container-button{
     border-radius: 4rem;
     font-size: 2.1rem;
     color: #fff;
@@ -586,7 +557,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .free__block-button{
+    .free__container-button{
         border-radius: 6.5rem;
         font-size: 3.4rem;
         width: 100%;
@@ -598,7 +569,7 @@ a:hover {
 }
 
 
-.free__block-button::after {
+.free__container-button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -613,7 +584,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.free__block-button a{
+.free__container-button a{
     display: block;
     width: 100%;
     height: 100%;
@@ -624,7 +595,7 @@ a:hover {
     letter-spacing: 0.21rem;
 }
 
-.free__block-content{
+.free__container-content{
     font-size: 1.7rem;
     color: #50BFFF;
     text-align: center;
@@ -632,38 +603,39 @@ a:hover {
     border-bottom: 0.1rem solid #50BFFF;
     padding: 0.5rem 0;
     margin-bottom: 1rem;
+    letter-spacing: 0.1em;
 }
 
 @media screen and (min-width: 768px) {
-    .free__block-content{
+    .free__container-content{
         font-size: 2.8rem;
 
     }
     
 }
 
-.free__block-txt{
+.free__container-txt{
     font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
-    .free__block-txt{
+    .free__container-txt{
         font-size: 2.26rem;
     }
     
 }
 
-.free__block-txt span{
+.free__container-txt span{
     font-size: 1.1rem;
 }
 @media screen and (min-width: 768px) {
-    .free__block-txt span{
+    .free__container-txt span{
         font-size: 1.78rem;
     }
     
 }
 
 
-/* ３つのポイント */
+/* -------------------３つのポイント------------------- */
 
 .point{
     padding: 3.3rem 2rem 2.9rem;
@@ -754,6 +726,7 @@ a:hover {
     text-align: center;
     background-color: #FA7DA3;
     padding: 0.9rem 0;
+    letter-spacing: 0.05em;
 }
 
 .point__item-content{
@@ -822,7 +795,7 @@ a:hover {
 }
 
 /* 無料体験実施中 */
-.free__block02{
+.free__container02{
     padding: 2.5rem 2rem 2.3rem;
 }
 
