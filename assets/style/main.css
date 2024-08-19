@@ -509,24 +509,24 @@ a:hover {
 }
 
 /* ----------------------無料体験実施中------------------ */
-.free{
+.free01{
     padding: 0.8rem 2rem 3rem;
 }
 @media screen and (min-width: 768px) {
-    .free{
+    .free01{
         padding: 3.8rem 2rem 5rem;
     }
     
 }
 
 @media screen and (min-width: 768px) {
-    .free__container{
+    .free01__container{
         max-width: 57.58rem;
         margin-inline: auto;
     }
     
 }
-.free__container-heading{
+.free01__container-heading{
     font-size: 2.1rem;
     letter-spacing: 0.1em;
     transform: translate(0.5rem, 0);
@@ -536,7 +536,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .free__container-heading{
+    .free01__container-heading{
         font-size: 3.4rem;
         margin-bottom: 0.5rem;
     }
@@ -544,7 +544,7 @@ a:hover {
 }
 
 
-.free__container-button{
+.free01__container-button{
     border-radius: 4rem;
     font-size: 2.1rem;
     color: #fff;
@@ -557,7 +557,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .free__container-button{
+    .free01__container-button{
         border-radius: 6.5rem;
         font-size: 3.4rem;
         width: 100%;
@@ -569,7 +569,7 @@ a:hover {
 }
 
 
-.free__container-button::after {
+.free01__container-button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -584,7 +584,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.free__container-button a{
+.free01__container-button a{
     display: block;
     width: 100%;
     height: 100%;
@@ -595,7 +595,7 @@ a:hover {
     letter-spacing: 0.21rem;
 }
 
-.free__container-content{
+.free01__container-content{
     font-size: 1.7rem;
     color: #50BFFF;
     text-align: center;
@@ -607,7 +607,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .free__container-content{
+    .free01__container-content{
         font-size: 2.8rem;
         padding: 0.7rem 0;
         margin-bottom: 1.7rem;
@@ -615,21 +615,21 @@ a:hover {
     
 }
 
-.free__container-txt{
+.free01__container-txt{
     font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-txt{
+    .free01__container-txt{
         font-size: 2.26rem;
     }
     
 }
 
-.free__container-txt span{
+.free01__container-txt span{
     font-size: 1.1rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-txt span{
+    .free01__container-txt span{
         font-size: 1.78rem;
     }
     
@@ -766,25 +766,11 @@ a:hover {
     
 }
 
-.point__item02{
-    border: 1px solid #FA7DA3;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-}
-@media screen and (min-width: 768px) {
-    .point__item02{
-        margin-bottom: 5rem;
-    }
-    
-}
 
-.point__item03{
-    border: 0.1rem solid #FA7DA3;
-    border-radius: 1rem;
-    margin-bottom: 0;
-}
 
-.point__item-title{
+
+
+.point__item01-title{
     color: #fff;
     font-size: 1.8rem;
     text-align: center;
@@ -794,14 +780,15 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .point__item-title{
+    .point__item01-title{
         font-size: 2.8rem;
         padding: 1.2rem 0;
     }
     
 }
 
-.point__item-content{
+
+.point__item01-content{
     padding: 1.5rem 1.9rem 1.6rem;
     background-color: #fff;
     font-size: 1.4rem;
@@ -809,7 +796,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .point__item-content{
+    .point__item01-content{
         padding: 2.5rem 4rem 3.5rem;
         font-size: 2.1rem;
         line-height: 1.6;
@@ -817,20 +804,6 @@ a:hover {
     
 }
 
-.point__item02-content-2{
-    padding: 1.5rem 1.9rem 1.1rem;
-    background-color: #fff;
-    font-size: 1.4rem;
-    line-height: 1.5;
-}
-@media screen and (min-width: 768px) {
-    .point__item02-content-2{
-        padding: 2.5rem 4rem 4rem;
-        font-size: 2.1rem;
-        line-height: 1.6;
-    }
-    
-}
 
 .point__item01-content-txt{
     font-size: 1.4rem;
@@ -857,27 +830,27 @@ a:hover {
     }
     
 }
-.point__item-content-img{
+.point__item01-content-img{
     display: flex;
     justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
-    .point__item-content-img{
+    .point__item01-content-img{
         justify-content: center;
         gap: 4rem;
     }
     
 }
 
-.point__item-content-img img{
+.point__item01-content-img img{
     width: 14.3rem;
     height: 8.5rem;
     margin-bottom: 0.2rem;
 }
 
 @media screen and (min-width: 768px) {
-    .point__item-content-img img{
+    .point__item01-content-img img{
         width: 23.3rem;
         height: 13.5rem;
         margin-bottom: 0.7rem;
@@ -885,20 +858,65 @@ a:hover {
     
 }
 
-.point__item02-txt{
+
+.point__item02{
+    border: 1px solid #FA7DA3;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+    .point__item02{
+        margin-bottom: 5rem;
+    }
+    
+}
+
+.point__item02-title{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #FA7DA3;
+    padding: 0.7rem 0;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+    .point__item02-title{
+        font-size: 2.8rem;
+        padding: 1.2rem 0;
+    }
+    
+}
+.point__item02-content{
+    padding: 1.5rem 1.9rem 1.1rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+    .point__item02-content{
+        padding: 2.5rem 4rem 4rem;
+        font-size: 2.1rem;
+        line-height: 1.6;
+    }
+    
+}
+
+
+.point__item02-content-body-txt{
     font-size: 2.3rem;
     text-align: center;
     margin-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-    .point__item02-txt{
+    .point__item02-content-body-txt{
         margin-bottom: 2rem;
     }
     
 }
 
 
-.point__item02-content{
+.point__item02-content-parts-img{
     display: grid;
     grid-template-columns: 10rem 10rem 10rem;
     grid-template-rows: 13rem 13rem;
@@ -906,7 +924,7 @@ a:hover {
     place-items: center;
 }
 @media screen and (min-width: 768px) {
-    .point__item02-content{
+    .point__item02-content-parts-img{
         grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem;
         grid-template-rows: 12rem;
         grid-gap: 1.2rem;
@@ -915,51 +933,87 @@ a:hover {
     
 }
 
-.point__item02-content-txt{
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
+.point__item02-content-parts-txt{
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-    .point__item02-content-txt{
-        font-size: 2.1rem;
-        line-height: 1.6;
-        margin-bottom: 2.3rem;
+    .point__item02-content-parts-txt{
+        margin-bottom: 2rem;
     }
     
 }
 
-.point__item02-content-div{
+.point__item02-content-body{
     margin-bottom: 4.5rem;
     text-align: center;
 }
 @media screen and (min-width: 768px) {
-    .point__item02-content-div{
+    .point__item02-content-body{
         text-align: center;
         margin-bottom: 5.2rem;
     }
 
-    .point__item02-content-div img{
+    .point__item02-content-body img{
         transform: translate(1rem, 0);
     }
 }
 
-.point__item02-content div img{
+.point__item02-content-parts-img div img{
     margin-bottom: 0.4rem;
 }
 
-.point__item02-content div p{
+.point__item02-content-parts-img div p{
     text-align: center;
     color: #FA7DA3;
     font-size: 1.4rem;
 }
 
+.point__item03{
+    border: 0.1rem solid #FA7DA3;
+    border-radius: 1rem;
+    margin-bottom: 0;
+}
+
+.point__item03-title{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #FA7DA3;
+    padding: 0.7rem 0;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+    .point__item03-title{
+        font-size: 2.8rem;
+        padding: 1.2rem 0;
+    }
+}
+
+.point__item03-content{
+    padding: 1.5rem 1.9rem 1.6rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .point__item03-content{
+        padding: 2.5rem 4rem 3.5rem;
+        font-size: 2.1rem;
+        line-height: 1.6;
+    }
+    
+}
+
 /*------------- 無料体験実施中 ---------------*/
-.free__container02{
+.free02{
     padding: 2.5rem 2rem 2.3rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container02{
+    .free02{
         padding: 4rem 2rem 3.3rem;
     }
     
@@ -967,13 +1021,13 @@ a:hover {
 
 
 @media screen and (min-width: 768px) {
-    .free__container{
+    .free02__container{
         max-width: 57.58rem;
         margin-inline: auto;
     }
     
 }
-.free__container-heading-02{
+.free02__container-heading{
     font-size: 2.1rem;
     letter-spacing: 0.1em;
     transform: translate(0.5rem, 0);
@@ -982,7 +1036,7 @@ a:hover {
     margin-bottom: 0.4rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-heading-02{
+    .free02__container-heading{
         font-size: 3.4rem;
         margin-bottom: 1rem;
     }
@@ -992,7 +1046,7 @@ a:hover {
 
 
 
-.free__container-button-02{
+.free02__container-button{
     border-radius: 4rem;
     font-size: 2.1rem;
     color: #fff;
@@ -1004,7 +1058,7 @@ a:hover {
     margin-bottom: 0rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-button-02{
+    .free02__container-button{
         border-radius: 6.5rem;
         font-size: 3.4rem;
         width: 100%;
@@ -1017,7 +1071,7 @@ a:hover {
 
 
 
-.free__container-button-02::after {
+.free02__container-button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1032,7 +1086,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.free__container-button-02 a{
+.free02__container-button a{
     display: block;
     width: 100%;
     height: 100%;
@@ -1363,12 +1417,12 @@ a:hover {
 }
 
 /*-------------- 無料体験実施中！------------- */
-.free__container03{
+.free03{
     padding: 2.2rem 2rem 2.3rem;
     margin-bottom: 1.9rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container03{
+    .free03{
         padding: 5.2rem 2rem 3rem;
         margin-bottom: 3.5rem;
     }
@@ -1377,13 +1431,13 @@ a:hover {
 
 
 @media screen and (min-width: 768px) {
-    .free__container{
+    .free03__container{
         max-width: 57.58rem;
         margin-inline: auto;
     }
     
 }
-.free__container-heading-03{
+.free03__container-heading{
     font-size: 2.1rem;
     letter-spacing: 0.1em;
     transform: translate(0.5rem, 0);
@@ -1392,7 +1446,7 @@ a:hover {
     margin-bottom: 0.4rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-heading-03{
+    .free03__container-heading{
         font-size: 3.4rem;
         margin-bottom: 1rem;
     }
@@ -1401,7 +1455,7 @@ a:hover {
 
 
 
-.free__container-button-03{
+.free03__container-button{
     border-radius: 4rem;
     font-size: 2.1rem;
     color: #fff;
@@ -1413,7 +1467,7 @@ a:hover {
     margin-bottom: 0rem;
 }
 @media screen and (min-width: 768px) {
-    .free__container-button-03{
+    .free03__container-button{
         border-radius: 6.5rem;
         font-size: 3.4rem;
         width: 100%;
@@ -1426,7 +1480,7 @@ a:hover {
 
 
 
-.free__container-button-03::after {
+.free03__container-button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1441,7 +1495,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.free__container-button-03 a{
+.free03__container-button a{
     display: block;
     width: 100%;
     height: 100%;
