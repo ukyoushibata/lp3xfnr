@@ -6,6 +6,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
+        centerPadding: "0%",
         responsive: [{
             breakpoint: 768,
             settings: {
@@ -15,7 +16,7 @@ $(document).ready(function () {
                 dots: true,
                 arrows: true,
                 centerMode: true,
-                centerPadding: "10%",
+                centerPadding: "8.4%",
             }
         }]
     });
